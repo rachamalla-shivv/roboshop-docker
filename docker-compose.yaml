@@ -20,6 +20,7 @@ services:
       RABBITMQ_DEFAULT_USER: roboshop
       RABBITMQ_DEFAULT_PASS: roboshop123
   user:
+    image: user:v1
     container_name: user
     depends_on:
     - mongodb
